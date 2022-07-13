@@ -30,6 +30,57 @@
     margin-left: 8rem;
 }
 
+.menu-button-container {
+    display: none;
+    height: 100%;
+    width: 30px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+#menu-toggle {
+    display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+  display: block;
+  background-color: #0060ff;
+  position: absolute;
+  height: 2px;
+  width: 20px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px;
+}
+
+.menu-button::before {
+  content: '';
+  margin-top: -6px;
+}
+
+.menu-button::after {
+  content: '';
+  margin-top: 6px;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(405deg);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button {
+  background: rgba(255, 255, 255, 0);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+  margin-top: 0px;
+  transform: rotate(-405deg);
+}
+  
+
 
 .section-hero{
     margin-top: 12rem;
@@ -265,4 +316,153 @@
 .container-footer{
     padding: 64px 0;
     border-top: 1px solid #ebeeef;
+}
+
+@media screen  and (max-width: 991px) {
+    .section-hero{
+        background-image: none;
+        margin-top: 13rem;
+    }
+    .container.hero{
+        display: flex;
+        justify-content: center;
+    }
+    .hero-heading, .hero-paragraph{
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .hero__buttons{
+        justify-content: center;
+    }
+    .hero__buttons .primary-button{
+        display: none;
+    }
+
+    .header-nav__button{
+        display: none;
+    }
+
+    .menu-button-container {
+        display: flex;
+    }
+    .nav-menu {
+        position: absolute;
+        top: 0;
+        margin-top: 50px;
+        left: 0;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+    }
+    #menu-toggle ~ .nav-menu a {
+        height: 0;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+        opacity: 0;
+    }
+    #menu-toggle:checked ~ .nav-menu a {
+        height: 2.5em;
+        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+        opacity: 1;
+    }
+    .nav-menu > a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        width: 100%;
+        color: var(--gray-light);
+        background-color: #f9f9fa;
+    }
+    .container.icons-wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+    .icon-block{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .icon-paragraph{
+        max-width: 38rem;
+    }
+    .icon-img__1{
+        padding-left: 17px;
+    }
+    .icon-img__2{
+        padding-left: 50px;
+    }
+    .icon-img__3{
+        padding-left: 55px;
+    }
+
+    .container.consistent{
+        flex-direction: column-reverse;
+    }
+
+    .cons-img{
+        margin-left: 0;
+    }
+
+    .cons-img__cursor{
+        display: none;
+    }
+
+    .consistent-content{
+        margin-top: 4.8rem;
+        text-align: center;
+    }
+
+    .container.feature-wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+    .feature-card{
+        max-width: 340px;
+        text-align: center;
+    }
+
+    .container.efficient{
+        flex-direction: column;
+    }
+    .efficient-img__cursor{
+        display: none;
+    }
+    .efficient-content{
+        margin-left: 0;
+        margin-top: 4.8rem;
+        text-align: center;
+    }
+    .container.projects{
+        flex-direction: column-reverse;
+    }
+    .project-content{
+        margin-right: 0;
+        text-align: center;
+    }
+    .container-pricing{
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+    }
+    .pricing__content{
+        max-width: 38rem;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .pricing-price{
+        margin-top: 3rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .footer-content{
+        flex-direction: column;
+    }
 }

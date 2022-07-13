@@ -1,0 +1,268 @@
+.section__bg{
+    background-color: var(--primary-bg-color);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    max-height: 72.6rem;
+}
+
+.navbar__logo{
+    width: 16.3rem;
+    height: 3rem;
+    background-image: url(/imgs/logo.svg);
+    background-position: 50% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.navbar{
+    margin-top: 4.8rem;
+}
+
+.nav-item{
+    color: var(--gray-light);
+    padding: 2.2rem;
+}
+
+.header-nav__button{
+    margin-left: 8rem;
+}
+
+
+.section-hero{
+    margin-top: 12rem;
+    max-height: 49.6rem;
+    height: 49.6rem;
+    background-image: url(/imgs/image-hero.png);
+    background-position: 50% 0%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero-heading{
+    color: var(--black);
+    max-width: 39.3rem;
+    margin-bottom: 2.4rem;
+    font-size: 4.6rem;
+    line-height: 5.4rem;
+}
+
+.hero-paragraph{
+    max-width: 33.8rem;
+    margin-bottom: 3.2rem;
+}
+
+.hero__buttons{
+    gap: 1.6rem;
+}
+
+
+.section-icons{
+    margin-top: 10rem;
+}
+
+.icons-wrapper{
+    gap: 4rem;
+}
+
+.icon-block{
+    width: 34rem;
+    height: 26rem;
+}
+
+.icon-heading{
+    margin-bottom: 1.6rem;
+    font-family: var(--primary-font-semibold);
+    color: var(--black);
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+}
+
+.icon-paragraph{
+    max-width: 24.5rem;
+    margin-bottom: 3.2rem;
+}
+
+.consistent-section{
+    margin-top: 10rem;
+}
+
+.consistent-heading{
+    font-family: var(--primary-font-semibold);
+    color: var(--black);
+    max-width: 28.5rem;
+    margin-bottom: 16px;
+    font-size: 30px;
+    line-height: 3.8rem;
+}
+
+.consistent-paragraph{
+    max-width: 28.5rem;
+    margin-bottom: 3.2rem;
+}
+
+.cons-img{
+    width: 53rem;
+    height: 49.2rem;
+    aspect-ratio: 530 / 492;
+    margin-left: 21.5rem;
+}
+
+.cons-img__cursor{
+    position: absolute;
+    bottom: 100px;
+    left: 150px;
+}
+
+.section-feature{
+    margin-top: 10rem;
+}
+
+.feature-wrapper{
+    gap: 40px;
+}
+
+.feature-img{
+    width: 34rem;
+    height: 27rem;
+}
+
+.feature__title{
+    margin-top: 2.4rem;
+    font-size: 2rem;
+    line-height: 2.8rem;
+    font-family: var(--primary-font-semibold);
+    color: var(--black);
+}
+
+.feature-desc{
+    margin-top: 0.8rem;
+}
+
+.efficient-section{
+    margin-top: 10rem;
+}
+
+.efficient-heading{
+    max-width: 28.5rem;
+    font-size: 3rem;
+    line-height: 3.8rem;
+    font-family: var(--primary-font-semibold);
+    color: var(--black);
+}
+
+.efficient-paragraph{
+    max-width: 28.5rem;
+}
+
+.efficient-img{
+    width: 53rem;
+    height: 49.2rem;
+    aspect-ratio: 530 / 492;
+}
+
+.efficient-img__cursor{
+    position: absolute;
+    bottom: 130px;
+    right: -60px;
+}
+
+.efficient-content{
+    margin-left: 177px;
+}
+
+.projects-section{
+    margin-top: 10rem;
+}
+
+.project-content{
+    margin-right: 10rem;
+}
+
+.project-heading{
+    font-family: var(--primary-font-semibold);
+    color: var(--black);
+    max-width: 28.5rem;
+    margin-bottom: 16px;
+    font-size: 30px;
+    line-height: 3.8rem;
+}
+
+.project-paragraph{
+    max-width: 28.5rem;
+    margin-bottom: 3.2rem;
+}
+
+
+.project-images{
+    margin-left: auto;
+}
+.project-img{
+    width: 625px;
+    height: 594px;
+    aspect-ratio: 625/594;
+    margin-bottom: 5.8rem;
+}
+
+.section-pricing{
+    margin-top: 10rem;
+}
+
+.content__heading{
+    font-family: var(--primary-font-bold);
+    color: var(--black);
+    font-size: 3rem;
+    line-height: 3.8
+}
+
+.container-pricing{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0 40px;
+    align-items: center;
+}
+
+.pricing-price{
+    height: 47.8rem;
+    max-width: 34rem;
+    border-radius: 0.8rem;
+    background-color: var(--white);
+    box-shadow: 0 0 30px -5px rgb(0 0 0 / 7%);
+    padding: 24px 16px;
+}
+
+.pricing__heading{
+    font-family: var(--primary-font-bold);
+    margin-bottom: 1.6rem;
+    color: var(--black);
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+}
+
+.pricing__price{
+    margin-bottom: 0.8rem;
+    color: var(--black);
+    font-size: 5.6rem;
+    line-height: 6.4rem;
+}
+
+.pricing__paragraph{
+    margin-bottom: 3.2rem;
+}
+
+.pricing__checkbox{
+    margin-bottom: 2.4rem;
+    display: flex;
+    gap: 0 16px;
+}
+
+.footer{
+    margin-top: 10rem;
+}
+
+.container-footer{
+    padding: 64px 0;
+    border-top: 1px solid #ebeeef;
+}

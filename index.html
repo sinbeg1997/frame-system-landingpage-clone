@@ -1,267 +1,321 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frames System</title>
+    <link rel="icon" type="image/x-icon" href="./imgs/favicon.png" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/setting.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frames System </title>
-    <link rel="icon" type="image/x-icon" href="./imgs/favicon.png">
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/setting.css">
-    <link rel="stylesheet" href="./css/main.css">
-</head>
-
-<body>
+  <body>
     <div class="wrapper">
-        <section class="section__bg"></section>
-        <header class="container navbar relative d-flex justify-between items-center">
+      <section class="section__bg"></section>
+      <header
+        class="container navbar relative d-flex justify-between items-center"
+      >
+        <a class="navbar__logo w-nav-brand"></a>
+        <div class="nav-menu-action d-flex justify-center items-center">
+          <input id="menu-toggle" type="checkbox" />
+          <label class="menu-button-container" for="menu-toggle">
+            <div class="menu-button"></div>
+          </label>
+          <nav class="nav-menu d-flex items-center">
+            <a href="#features" class="nav-item">Features</a>
+            <a href="#pricing" class="nav-item">Pricing</a>
+            <a href="#" class="nav-item">Preview in Figma</a>
+          </nav>
+          <a href="#" class="button primary-button header-nav__button"
+            >Buy it now</a
+          >
+        </div>
+      </header>
+      <section class="section-hero relative">
+        <div class="container hero">
+          <div class="hero-content">
+            <h1 class="hero-heading font-semibold">
+              Figma <span class="blue">starter kit</span>
+              for creating design system
+            </h1>
+            <p class="hero-paragraph">
+              We put a lot of effort so that you don't have to. You can develop
+              projects faster and better thanks to an easy and well-thought-out
+              frames design system.
+            </p>
+            <div class="hero__buttons d-flex">
+              <a class="button primary-button">Get Frames System</a>
+              <a class="button secondary-button">Preview in Figma</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-icons">
+        <div class="container icons-wrapper d-flex">
+          <div class="icon-block">
+            <img
+              alt="grid-feature"
+              src="./imgs/ikona-1.svg"
+              class="icon-img icon-img__1"
+            />
+            <h2 class="icon-heading">8px grid</h2>
+            <p class="icon-paragraph">
+              Create any complexity of pixel-perfect interfaces.The 8px grid is
+              followed by all items.
+            </p>
+          </div>
+          <div class="icon-block">
+            <img
+              alt="Spacing system"
+              src="./imgs/ikona-2.svg"
+              class="icon-img icon-img__2"
+            />
+            <h2 class="icon-heading">Spacing system</h2>
+            <p class="icon-paragraph">
+              Make a clean design with well defined spacings. Colored for ease,
+              and concealed with a single click.
+            </p>
+          </div>
+          <div class="icon-block">
+            <img
+              alt="Outline icons"
+              src="./imgs/iko3.svg"
+              class="icon-img icon-img__3"
+            />
+            <h2 class="icon-heading">150+ outlined icons</h2>
+            <p class="icon-paragraph">
+              Large library of over 150 unique outlined icons, designed by us
+              with attention to detail. And it’s growing!
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="consistent-section">
+        <div class="container d-flex items-center justify-end consistent">
+          <div class="consistent-content">
+            <h2 class="consistent-heading">
+              Consistent and compatible with needs
+            </h2>
+            <p class="consistent-paragraph">
+              Every element has been designed with Auto Layout 3.0, super-smart
+              variations, and accessibility in mind. Like wizzard, switch out
+              versions in seconds.
+            </p>
+          </div>
+          <div class="consistent-images relative">
+            <img
+              src="./imgs/consistent_Image-p-800.png"
+              alt=""
+              class="cons-img"
+            />
+            <img src="./imgs/cursor-1.svg" alt="" class="cons-img__cursor" />
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="section-feature">
+        <div class="container d-flex feature-wrapper">
+          <div class="feature-card">
+            <div class="feature-img">
+              <img
+                src="./imgs/features-image-1-p-500.png"
+                alt=""
+                class="feature-card__img"
+              />
+            </div>
+            <div class="feature-content">
+              <div class="feature__title">Auto layout 4.0</div>
+              <div class="feature-desc">
+                Components are responsive by default and constructed entirely
+                with Auto-Layout.
+              </div>
+            </div>
+          </div>
+          <div class="feature-card">
+            <div class="feature-img">
+              <img
+                src="./imgs/features-image-2-p-500.png"
+                alt=""
+                class="feature-card__img"
+              />
+            </div>
+            <div class="feature-content">
+              <div class="feature__title">Variants</div>
+              <div class="feature-desc">
+                All component libraries are built on the basis of variants to
+                make the use of them as easy as possible.
+              </div>
+            </div>
+          </div>
+          <div class="feature-card">
+            <div class="feature-img">
+              <img
+                src="./imgs/features-image-3-p-500.png"
+                alt=""
+                class="feature-card__img"
+              />
+            </div>
+            <div class="feature-content">
+              <div class="feature__title">Styles</div>
+              <div class="feature-desc">
+                Components are responsive by default and constructed entirely
+                with Auto-Layout.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="efficient-section">
+        <div class="container d-flex items-center efficient">
+          <div class="efficient-images relative">
+            <img
+              src="./imgs/consistent_Image-p-800.png"
+              alt=""
+              class="efficient-img"
+            />
+            <img
+              src="./imgs/cursor-2.svg"
+              alt=""
+              class="efficient-img__cursor"
+            />
+          </div>
+          <div class="efficient-content">
+            <h2 class="efficient-heading">
+              As efficient and simple as possible
+            </h2>
+            <p class="efficient-paragraph">
+              The library is designed in such a way as to make it as easy as
+              possible for you to create your own system design. Components are
+              the essence of the elements that you will need!
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="consistent-section">
+        <div class="container d-flex items-center justify-end consistent">
+          <div class="consistent-content">
+            <h2 class="consistent-heading">
+              Easily customizable and adaptable
+            </h2>
+            <p class="consistent-paragraph">
+              Change the style and personalize it in a fraction of a second. Use
+              our color library and start creating color variants faster!
+            </p>
+          </div>
+          <div class="consistent-images relative">
+            <img src="./imgs/image-3-p-800.png" alt="" class="cons-img" />
+            <img src="./imgs/color-block.svg" alt="" class="cons-img__cursor" />
+          </div>
+        </div>
+      </section>
+
+      <section class="projects-section">
+        <div class="container d-flex items-center projects">
+          <div class="project-content">
+            <h2 class="project-heading">Build projects more quickly</h2>
+            <p class="project-paragraph">
+              Don’t repeat yourself. Avoid redoing something already done. You
+              can develop projects faster and better thanks to an easy and
+              well-thought-out design framework.
+            </p>
+          </div>
+          <div class="project-images relative">
+            <img
+              src="./imgs/projects_Image-p-800.png"
+              alt=""
+              class="project-img"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="pricing" class="section-pricing">
+        <div class="container container-pricing">
+          <div class="pricing__content">
+            <div class="content__heading">Ready to get it?</div>
+            <div class="content__paragraph">
+              If you want to use our library, thats great! <br />We use a
+              pricing approach that is both <br />basic and clear.
+            </div>
+          </div>
+          <div class="pricing-price">
+            <div class="pricing__heading">Single</div>
+            <div class="pricing__price">49$</div>
+            <div class="pricing__paragraph">
+              For freelance and single designers
+            </div>
+            <div class="pricing__checkbox">
+              <img src="./imgs/checkbox.svg" alt="" class="check-box__img" />
+              <div class="check-box__paragraph">
+                For freelance and single designers
+              </div>
+            </div>
+            <div class="pricing__checkbox">
+              <img src="./imgs/checkbox.svg" alt="" class="check-box__img" />
+              <div class="check-box__paragraph">1400+ Components</div>
+            </div>
+            <div class="pricing__checkbox">
+              <img src="./imgs/checkbox.svg" alt="" class="check-box__img" />
+              <div class="check-box__paragraph">25+ Different Categories</div>
+            </div>
+            <div class="pricing__checkbox">
+              <img src="./imgs/checkbox.svg" alt="" class="check-box__img" />
+              <div class="check-box__paragraph">150+ Unique Outlined Icons</div>
+            </div>
+            <div class="pricing__checkbox">
+              <a href="#" class="button primary-button w-full"
+                >Buy single license</a
+              >
+            </div>
+          </div>
+          <div class="pricing-price">
+            <div class="pricing__heading">Team</div>
+            <div class="pricing__price">79$</div>
+            <div class="pricing__paragraph">Unlimited number of editors</div>
+            <div class="pricing__checkbox">
+              <img src="./imgs/checkbox.svg" alt="" class="check-box__img" />
+              <div class="check-box__paragraph">
+                For freelance and single designers
+              </div>
+            </div>
+            <div class="pricing__checkbox">
+              <img src="./imgs/checkbox.svg" alt="" class="check-box__img" />
+              <div class="check-box__paragraph">1400+ Components</div>
+            </div>
+            <div class="pricing__checkbox">
+              <img src="./imgs/checkbox.svg" alt="" class="check-box__img" />
+              <div class="check-box__paragraph">25+ Different Categories</div>
+            </div>
+            <div class="pricing__checkbox">
+              <img src="./imgs/checkbox.svg" alt="" class="check-box__img" />
+              <div class="check-box__paragraph">150+ Unique Outlined Icons</div>
+            </div>
+            <div class="pricing__checkbox">
+              <a href="#" class="button primary-button w-full"
+                >Buy team license</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="footer">
+        <div class="container container-footer">
+          <div class="footer-content d-flex items-center justify-between">
+            <nav class="footer-nav d-flex items-center">
+              <a href="#" class="nav-item">Features</a>
+              <a href="#" class="nav-item">Pricing</a>
+              <a href="#" class="nav-item">Preview in Figma</a>
+              <a href="#" class="nav-item">Follow on Twitter</a>
+            </nav>
             <a class="navbar__logo w-nav-brand"></a>
-            <div class="nav-menu-action d-flex justify-center items-center">
-                <input id="menu-toggle" type="checkbox" />
-                <label class='menu-button-container' for="menu-toggle">
-                    <div class='menu-button'></div>
-                </label>
-                <nav class="nav-menu d-flex items-center ">
-                    <a href="#features" class="nav-item">Features</a>
-                    <a href="#pricing" class="nav-item">Pricing</a>
-                    <a href="#" class="nav-item">Preview in Figma</a>
-                </nav>
-                <a href="#" class="button primary-button header-nav__button">Buy it now</a>
-
-            </div>
-        </header>
-        <section class="section-hero relative">
-            <div class="container hero">
-                <div class="hero-content">
-                    <h1 class="hero-heading font-semibold">Figma <span class="blue">starter kit</span>
-                        for creating
-                        design system
-                    </h1>
-                    <p class="hero-paragraph">We put a lot of effort so that you don't have to. You can develop projects
-                        faster and better thanks to an easy and well-thought-out frames design system.
-                    </p>
-                    <div class="hero__buttons d-flex">
-                        <a class="button primary-button">Get Frames System</a>
-                        <a class="button secondary-button">Preview in Figma</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="section-icons">
-            <div class="container icons-wrapper d-flex">
-                <div class="icon-block">
-                    <img src="./imgs/ikona-1.svg" class="icon-img icon-img__1" />
-                    <h2 class="icon-heading">8px grid</h2>
-                    <p class="icon-paragraph">
-                        Create any complexity of pixel-perfect interfaces.The 8px grid is followed
-                        by all items.
-                    </p>
-                </div>
-                <div class="icon-block">
-                    <img src="./imgs/ikona-2.svg" class="icon-img icon-img__2" />
-                    <h2 class="icon-heading">Spacing system</h2>
-                    <p class="icon-paragraph">
-                        Make a clean design with well defined spacings. Colored for ease, and concealed with a single
-                        click.
-                    </p>
-                </div>
-                <div class="icon-block">
-                    <img src="./imgs/iko3.svg" class="icon-img icon-img__3" />
-                    <h2 class="icon-heading">150+ outlined icons</h2>
-                    <p class="icon-paragraph">
-                        Large library of over 150 unique outlined icons, designed by us with attention to detail. And
-                        it’s growing!
-                    </p>
-                </div>
-            </div>
-        </section>
-        <section class="consistent-section">
-            <div class="container d-flex items-center justify-end consistent">
-                <div class="consistent-content">
-                    <h2 class="consistent-heading">Consistent and compatible with needs</h2>
-                    <p class="consistent-paragraph">
-                        Every element has been designed with Auto Layout 3.0, super-smart variations, and accessibility
-                        in mind. Like wizzard, switch out versions in seconds.
-                    </p>
-                </div>
-                <div class="consistent-images relative">
-                    <img src="./imgs/consistent_Image-p-800.png" alt="" class="cons-img">
-                    <img src="./imgs/cursor-1.svg" alt="" class="cons-img__cursor">
-                </div>
-            </div>
-        </section>
-
-        <section id="features" class="section-feature">
-            <div class="container d-flex feature-wrapper">
-                <div class="feature-card">
-                    <div class="feature-img">
-                        <img src="./imgs/features-image-1-p-500.png" alt="" class="feature-card__img">
-                    </div>
-                    <div class="feature-content">
-                        <div class="feature__title">
-                            Auto layout 4.0
-                        </div>
-                        <div class="feature-desc">
-                            Components are responsive by default and constructed entirely with Auto-Layout.
-                        </div>
-                    </div>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-img">
-                        <img src="./imgs/features-image-2-p-500.png" alt="" class="feature-card__img">
-                    </div>
-                    <div class="feature-content">
-                        <div class="feature__title">
-                            Variants
-                        </div>
-                        <div class="feature-desc">
-                            All component libraries are built on the
-                            basis of variants to make the use of them
-                            as easy as possible.
-                        </div>
-                    </div>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-img">
-                        <img src="./imgs/features-image-3-p-500.png" alt="" class="feature-card__img">
-                    </div>
-                    <div class="feature-content">
-                        <div class="feature__title">
-                            Styles
-                        </div>
-                        <div class="feature-desc">
-                            Components are responsive by default and constructed entirely with Auto-Layout.
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <section class="efficient-section">
-            <div class="container d-flex items-center efficient">
-                <div class="efficient-images relative">
-                    <img src="./imgs/consistent_Image-p-800.png" alt="" class="efficient-img">
-                    <img src="./imgs/cursor-2.svg" alt="" class="efficient-img__cursor">
-                </div>
-                <div class="efficient-content">
-                    <h2 class="efficient-heading">As efficient and simple as possible</h2>
-                    <p class="efficient-paragraph">
-                        The library is designed in such a way as to make it as easy as possible for you to create your
-                        own system design. Components are the essence of the elements that you will need!
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <section class="consistent-section">
-            <div class="container d-flex items-center justify-end consistent">
-                <div class="consistent-content">
-                    <h2 class="consistent-heading">Easily customizable
-                        and adaptable</h2>
-                    <p class="consistent-paragraph">
-                        Change the style and personalize it in a fraction of a second. Use our color library and start
-                        creating color variants faster!
-                    </p>
-                </div>
-                <div class="consistent-images relative">
-                    <img src="./imgs/image-3-p-800.png" alt="" class="cons-img">
-                    <img src="./imgs/color-block.svg" alt="" class="cons-img__cursor">
-                </div>
-            </div>
-        </section>
-
-
-        <section class="projects-section">
-            <div class="container d-flex items-center projects">
-                <div class="project-content">
-                    <h2 class="project-heading">Build projects more quickly</h2>
-                    <p class="project-paragraph">
-                        Don’t repeat yourself. Avoid redoing something already done.
-                        You can develop projects faster and better thanks to an easy and
-                        well-thought-out design framework.
-                    </p>
-                </div>
-                <div class="project-images relative">
-                    <img src="./imgs/projects_Image-p-800.png" alt="" class="project-img">
-                </div>
-            </div>
-        </section>
-
-        <section id="pricing" class="section-pricing">
-            <div class="container container-pricing">
-                <div class="pricing__content">
-                    <div class="content__heading">Ready to get it?</div>
-                    <div class="content__paragraph">If you want to use our library, thats great! <br>We use a pricing
-                        approach that is both <br>basic and clear.
-                    </div>
-                </div>
-                <div class="pricing-price">
-                    <div class="pricing__heading">Single</div>
-                    <div class="pricing__price">49$</div>
-                    <div class="pricing__paragraph">For freelance and single designers</div>
-                    <div class="pricing__checkbox">
-                        <img src="./imgs/checkbox.svg" alt="" class="check-box__img">
-                        <div class="check-box__paragraph">For freelance and single designers</div>
-                    </div>
-                    <div class="pricing__checkbox">
-                        <img src="./imgs/checkbox.svg" alt="" class="check-box__img">
-                        <div class="check-box__paragraph">1400+ Components</div>
-                    </div>
-                    <div class="pricing__checkbox">
-                        <img src="./imgs/checkbox.svg" alt="" class="check-box__img">
-                        <div class="check-box__paragraph">25+ Different Categories</div>
-                    </div>
-                    <div class="pricing__checkbox">
-                        <img src="./imgs/checkbox.svg" alt="" class="check-box__img">
-                        <div class="check-box__paragraph">150+ Unique Outlined Icons</div>
-                    </div>
-                    <div class="pricing__checkbox">
-                        <a href="#" class="button primary-button w-full">Buy single license</a>
-                    </div>
-                </div>
-                <div class="pricing-price">
-                    <div class="pricing__heading">Team</div>
-                    <div class="pricing__price">79$</div>
-                    <div class="pricing__paragraph">Unlimited number of editors</div>
-                    <div class="pricing__checkbox">
-                        <img src="./imgs/checkbox.svg" alt="" class="check-box__img">
-                        <div class="check-box__paragraph">For freelance and single designers</div>
-                    </div>
-                    <div class="pricing__checkbox">
-                        <img src="./imgs/checkbox.svg" alt="" class="check-box__img">
-                        <div class="check-box__paragraph">1400+ Components</div>
-                    </div>
-                    <div class="pricing__checkbox">
-                        <img src="./imgs/checkbox.svg" alt="" class="check-box__img">
-                        <div class="check-box__paragraph">25+ Different Categories</div>
-                    </div>
-                    <div class="pricing__checkbox">
-                        <img src="./imgs/checkbox.svg" alt="" class="check-box__img">
-                        <div class="check-box__paragraph">150+ Unique Outlined Icons</div>
-                    </div>
-                    <div class="pricing__checkbox">
-                        <a href="#" class="button primary-button w-full">Buy team license</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="footer">
-            <div class="container container-footer">
-                <div class="footer-content d-flex items-center justify-between">
-                    <nav class="footer-nav d-flex items-center ">
-                        <a href="#" class="nav-item">Features</a>
-                        <a href="#" class="nav-item">Pricing</a>
-                        <a href="#" class="nav-item">Preview in Figma</a>
-                        <a href="#" class="nav-item">Follow on Twitter</a>
-                    </nav>
-                    <a class="navbar__logo w-nav-brand"></a>
-                </div>
-            </div>
-        </section>
+          </div>
+        </div>
+      </section>
     </div>
-</body>
-
+  </body>
 </html>
